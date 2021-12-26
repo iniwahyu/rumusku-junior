@@ -79,4 +79,22 @@ class LuasController extends Controller
         ];
         return view("$this->views/segitiga", $data);
     }
+
+    public function luasTrapesium(Request $request)
+    {
+        if ($request->has('a') && $request->has('b') && $request->has('tinggi')) {
+            $hasil = 0.5 * ($request->get('a') + $request->get('b')) * $request->get('tinggi');
+        }
+
+        $rows = [
+            'hasil' => $hasil ?? null,
+        ];
+
+        $data = [
+            'title' => 'Luas Trapesium',
+            'url' => '',
+            'rows' => $rows,
+        ];
+        return view("$this->views/trapesium", $data);
+    }
 }
