@@ -97,4 +97,76 @@ class LuasController extends Controller
         ];
         return view("$this->views/trapesium", $data);
     }
+
+    public function luasJajarGenjang(Request $request)
+    {
+        if ($request->has('alas') && $request->has('tinggi')) {
+            $hasil = $request->get('alas') * $request->get('tinggi');
+        }
+
+        $rows = [
+            'hasil' => $hasil ?? null,
+        ];
+
+        $data = [
+            'title' => 'Luas Jajar Genjang',
+            'url' => '',
+            'rows' => $rows,
+        ];
+        return view("$this->views/jajar_genjang", $data);
+    }
+
+    public function luasBelahKetupat(Request $request)
+    {
+        if ($request->has('d1') && $request->has('d2')) {
+            $hasil = 0.5 * $request->get('d1') * $request->get('d2');
+        }
+
+        $rows = [
+            'hasil' => $hasil ?? null,
+        ];
+
+        $data = [
+            'title' => 'Luas Belah Ketupat',
+            'url' => '',
+            'rows' => $rows,
+        ];
+        return view("$this->views/belah_ketupat", $data);
+    }
+
+    public function luasLayangan(Request $request)
+    {
+        if ($request->has('d1') && $request->has('d2')) {
+            $hasil = 0.5 * $request->get('d1') * $request->get('d2');
+        }
+
+        $rows = [
+            'hasil' => $hasil ?? null,
+        ];
+
+        $data = [
+            'title' => 'Luas Layang-Layang',
+            'url' => '',
+            'rows' => $rows,
+        ];
+        return view("$this->views/layangan", $data);
+    }
+
+    public function luasLingkaran(Request $request)
+    {
+        if ($request->has('jari')) {
+            $hasil = round(22/7 * (pow($request->get('jari'), 2)), 2);
+        }
+
+        $rows = [
+            'hasil' => $hasil ?? null,
+        ];
+
+        $data = [
+            'title' => 'Luas Lingkaran',
+            'url' => '',
+            'rows' => $rows,
+        ];
+        return view("$this->views/lingkaran", $data);
+    }
 }
