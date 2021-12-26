@@ -46,7 +46,6 @@ class LuasController extends Controller
 
     public function luasPersegiPanjang(Request $request)
     {
-        // $sisi1 = 0;
         if ($request->has('panjang') && $request->has('lebar')) {
             $hasil = $request->get('panjang') * $request->get('lebar');
         }
@@ -61,5 +60,23 @@ class LuasController extends Controller
             'rows' => $rows,
         ];
         return view("$this->views/persegi_panjang", $data);
+    }
+
+    public function luasSegitiga(Request $request)
+    {
+        if ($request->has('alas') && $request->has('tinggi')) {
+            $hasil = 0.5 * $request->get('alas') * $request->get('tinggi');
+        }
+
+        $rows = [
+            'hasil' => $hasil ?? null,
+        ];
+
+        $data = [
+            'title' => 'Luas Segitiga',
+            'url' => '',
+            'rows' => $rows,
+        ];
+        return view("$this->views/segitiga", $data);
     }
 }
