@@ -19,15 +19,27 @@
                 <div class="col-lg-6">
                     <h3>Masukkan Nilai</h3>
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Alas</label>
+                        <label class="col-sm-2 col-form-label">Sisi 1</label>
                         <div class="col-sm-10">
-                            <input type="number" id="i-alas" class="form-control" name="alas" placeholder="Masukkan Angka" value="{{ request()->get('alas') }}">
+                            <input type="number" id="i-sisi-1" class="form-control" name="sisi-1" placeholder="Masukkan Angka" value="{{ request()->get('sisi-1') }}">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Tinggi</label>
+                        <label class="col-sm-2 col-form-label">Sisi 2</label>
                         <div class="col-sm-10">
-                            <input type="number" id="i-tinggi" class="form-control" name="tinggi" placeholder="Masukkan Angka" value="{{ request()->get('tinggi') }}">
+                            <input type="number" id="i-sisi-2" class="form-control" name="sisi-2" placeholder="Masukkan Angka" value="{{ request()->get('sisi-2') }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Sisi 3</label>
+                        <div class="col-sm-10">
+                            <input type="number" id="i-sisi-3" class="form-control" name="sisi-3" placeholder="Masukkan Angka" value="{{ request()->get('sisi-3') }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Sisi 4</label>
+                        <div class="col-sm-10">
+                            <input type="number" id="i-sisi-4" class="form-control" name="sisi-4" placeholder="Masukkan Angka" value="{{ request()->get('sisi-4') }}">
                         </div>
                     </div>
                     <div class="form-group pt-2">

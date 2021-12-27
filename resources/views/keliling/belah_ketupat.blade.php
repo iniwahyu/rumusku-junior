@@ -19,15 +19,9 @@
                 <div class="col-lg-6">
                     <h3>Masukkan Nilai</h3>
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Diagonal 1</label>
+                        <label class="col-sm-2 col-form-label">Sisi</label>
                         <div class="col-sm-10">
-                            <input type="number" id="i-d1" class="form-control" name="d1" placeholder="Masukkan Angka" value="{{ request()->get('d1') }}">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Diagonal 2</label>
-                        <div class="col-sm-10">
-                            <input type="number" id="i-d2" class="form-control" name="d2" placeholder="Masukkan Angka" value="{{ request()->get('d2') }}">
+                            <input type="number" id="i-sisi" class="form-control" name="sisi" placeholder="Masukkan Angka" value="{{ request()->get('sisi') }}">
                         </div>
                     </div>
                     <div class="form-group pt-2">

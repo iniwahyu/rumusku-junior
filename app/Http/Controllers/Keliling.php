@@ -81,8 +81,8 @@ class Keliling extends Controller
 
     public function kelilingTrapesium(Request $request)
     {
-        if ($request->has('a') && $request->has('b') && $request->has('tinggi')) {
-            $hasil = 0.5 * ($request->get('a') + $request->get('b')) * $request->get('tinggi');
+        if ($request->has('sisi-1') && $request->has('sisi-2') && $request->has('sisi-3') && $request->has('sisi-4')) {
+            $hasil = $request->get('sisi-1') + $request->get('sisi-2') + $request->get('sisi-3') + $request->get('sisi-4');
         }
 
         $rows = [
@@ -99,8 +99,8 @@ class Keliling extends Controller
 
     public function kelilingJajarGenjang(Request $request)
     {
-        if ($request->has('alas') && $request->has('tinggi')) {
-            $hasil = $request->get('alas') * $request->get('tinggi');
+        if ($request->has('sisi-1') && $request->has('sisi-2') && $request->has('sisi-3') && $request->has('sisi-4')) {
+            $hasil = $request->get('sisi-1') + $request->get('sisi-2') + $request->get('sisi-3') + $request->get('sisi-4');
         }
 
         $rows = [
@@ -117,8 +117,8 @@ class Keliling extends Controller
 
     public function kelilingBelahKetupat(Request $request)
     {
-        if ($request->has('d1') && $request->has('d2')) {
-            $hasil = 0.5 * $request->get('d1') * $request->get('d2');
+        if ($request->has('sisi')) {
+            $hasil = 4 * $request->get('sisi');
         }
 
         $rows = [
@@ -135,8 +135,8 @@ class Keliling extends Controller
 
     public function kelilingLayangan(Request $request)
     {
-        if ($request->has('d1') && $request->has('d2')) {
-            $hasil = 0.5 * $request->get('d1') * $request->get('d2');
+        if ($request->has('sisi-1') && $request->has('sisi-2')) {
+            $hasil = 2 * ($request->get('sisi-1') + $request->get('sisi-2'));
         }
 
         $rows = [
@@ -153,8 +153,8 @@ class Keliling extends Controller
 
     public function kelilingLingkaran(Request $request)
     {
-        if ($request->has('jari')) {
-            $hasil = round(22/7 * (pow($request->get('jari'), 2)), 2);
+        if ($request->has('diameter')) {
+            $hasil = round(22/7 * $request->get('diameter'), 2);
         }
 
         $rows = [

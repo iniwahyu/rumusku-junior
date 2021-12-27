@@ -19,9 +19,9 @@
                 <div class="col-lg-6">
                     <h3>Masukkan Nilai</h3>
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Jari-Jari</label>
+                        <label class="col-sm-2 col-form-label">Diameter</label>
                         <div class="col-sm-10">
-                            <input type="number" id="i-jari" class="form-control" name="jari" placeholder="Masukkan Angka" value="{{ request()->get('jari') }}">
+                            <input type="number" id="i-diameter" class="form-control" name="diameter" placeholder="Masukkan Angka" value="{{ request()->get('diameter') }}">
                         </div>
                     </div>
                     <div class="form-group pt-2">
