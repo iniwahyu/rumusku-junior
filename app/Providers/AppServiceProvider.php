@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Default Template
+        view()->share('defaultTemplate', 'template');
     }
 }
