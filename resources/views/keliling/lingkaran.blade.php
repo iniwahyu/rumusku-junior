@@ -1,4 +1,4 @@
-@extends('luas/home')
+@extends($defaultTemplate)
 
 @section('css-library')
     
