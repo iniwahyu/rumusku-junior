@@ -68,8 +68,16 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <li class="nav-item">
+                            <a href="{{ url('') }}" class="nav-link">
+                                <i class="nav-icon fas fa-home"></i>
+                                <p>
+                                    Home
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ url('luas') }}" class="nav-link">
-                                <i class="nav-icon far fa-image"></i>
+                                <i class="nav-icon fas fa-list"></i>
                                 <p>
                                     Luas
                                 </p>
@@ -77,7 +85,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('keliling') }}" class="nav-link">
-                                <i class="nav-icon far fa-image"></i>
+                                <i class="nav-icon fas fa-list"></i>
                                 <p>
                                     Keliling
                                 </p>

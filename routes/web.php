@@ -2,9 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Homepage
+Route::get('/', 'Homepage@index');
 
 // Luas
 Route::get('/luas', 'LuasController@index');
