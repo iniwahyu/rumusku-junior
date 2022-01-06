@@ -20,9 +20,13 @@ class Presentase extends Controller
         if ($request->has('jumlahx') && $request->has('jumlahy')) {
             $hasil = $request->get('jumlahx') / $request->get('jumlahy') * 100;
         }
+        if ($request->has('jumlaha') && $request->has('jumlahb')) {
+            $hasil2 = $request->get('jumlaha') * $request->get('jumlahb') / 100;
+        }
 
         $rows = [
             'hasil' => $hasil ?? null,
+            'hasil2' => $hasil2 ?? null,
         ];
 
         $data = [

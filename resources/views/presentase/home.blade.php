@@ -57,7 +57,7 @@
                 <form action="" method="get">
                     <div class="row">
                         <div class="col-lg-9">
-                            <p><b>Contoh</b>: 20% (A) dari 80 (B) berapa Nilainya? (Jawaban 25 %)</p>
+                            <p><b>Contoh</b>: 20% (A) dari 80 (B) berapa Nilainya? (Jawaban 16)</p>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Masukkan Nilai A</label>
                                 <div class="col-sm-10">
@@ -73,7 +73,7 @@
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Hasil</label>
                                 <div class="col-sm-10">
-                                    <input type="text" id="i-hasil" class="form-control" value="{{ $rows['hasil'] . " %" ?? null }}" readonly>
+                                    <input type="text" id="i-hasil" class="form-control" value="{{ $rows['hasil2'] ?? null }}" readonly>
                                 </div>
                             </div>
                             <div class="form-group mt-3">
