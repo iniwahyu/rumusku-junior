@@ -30,3 +30,6 @@ Route::get('/keliling/jajar-genjang', 'Keliling@kelilingJajarGenjang');
 Route::get('/keliling/belah-ketupat', 'Keliling@kelilingBelahKetupat');
 Route::get('/keliling/layangan', 'Keliling@kelilingLayangan');
 Route::get('/keliling/lingkaran', 'Keliling@kelilingLingkaran');
+
+// Presentase
+Route::get('/presentase', 'Presentase@index');
